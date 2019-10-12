@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ResultGraphFragment">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:background="@drawable/background_yellow_round"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="9dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:padding="16dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:tint="@color/main_color"
+                   android:src="@drawable/ic_round_empty"
+                   android:layout_width="19dp"
+                   android:layout_height="19dp" />
+               <TextView
+                   android:layout_marginLeft="16dp"
+                   android:textColor="#555"
+                   android:text="어두운 영역"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+           </LinearLayout>
+           <LinearLayout
+               android:background="#E5E5E5"
+               android:layout_width="match_parent"
+               android:layout_height="1dp" />
+           <LinearLayout
+               android:padding="16dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:tint="#FD871A"
+                   android:src="@drawable/ic_round_empty"
+                   android:layout_width="19dp"
+                   android:layout_height="19dp" />
+               <TextView
+                   android:layout_marginLeft="16dp"
+                   android:textColor="#555"
+                   android:text="휘어진 영역"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+           </LinearLayout>
+       </LinearLayout>
+       <LinearLayout
+           android:background="@drawable/background_yellow_round"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="9dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:padding="16dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_marginLeft="16dp"
+                   android:textColor="#555"
+                   android:text="검사 결과"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+           </LinearLayout>
+           <LinearLayout
+               android:background="#E5E5E5"
+               android:layout_width="match_parent"
+               android:layout_height="1dp" />
+           <HorizontalScrollView
+               android:layout_marginTop="4dp"
+               android:layout_marginRight="16dp"
+               android:layout_marginLeft="16dp"
+               android:layout_marginBottom="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.github.mikephil.charting.charts.LineChart
+                       android:id="@+id/chart1"
+                       android:layout_weight="1"
+                       android:layout_width="366dp"
+                       android:layout_height="200dp" />
+               </LinearLayout>
+           </HorizontalScrollView>
+       </LinearLayout>
+   </LinearLayout>
+
+</FrameLayout>

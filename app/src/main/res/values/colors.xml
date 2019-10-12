@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#757575</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="alpha">#0000</color>
+
+    <color name="unselect">#222222</color>
+
+    <color name="main_color">#FDC31A</color>
+    <color name="tab_unselect">#999999</color>
+
+    <color name="yellow">#FDC31A</color>
+</resources>

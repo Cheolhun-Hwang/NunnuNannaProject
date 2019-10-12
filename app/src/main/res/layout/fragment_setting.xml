@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f"
+    tools:context=".fragments.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#eee">
+
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="알림받기"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            android:theme="@style/SCBSwitch" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selected_item_textView"
+            android:text="주기 설정"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:text="1주일"
+            android:textSize="18sp"
+            android:gravity="left" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:text="2주일"
+            android:textSize="18sp"
+            android:gravity="left" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:text="4주일"
+            android:textSize="18sp"
+            android:gravity="left" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:text="Test-Now"
+            android:textSize="18sp"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+</FrameLayout>

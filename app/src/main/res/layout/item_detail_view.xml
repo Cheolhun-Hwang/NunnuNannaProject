@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alpha">
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/item_view"
+        android:padding="16dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:id="@+id/item_detail_title"
+            android:text="0000-00-00 검사결과"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/black"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+    </LinearLayout>
+</LinearLayout>
